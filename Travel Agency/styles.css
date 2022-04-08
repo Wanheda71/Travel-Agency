@@ -99,9 +99,6 @@ header nav ul li a
 }
 
 /* MAIN IMAGE */
-.container-home{
-    background-image: url("videos/thailandlow.mp4");
-}
 video { 
     position: absolute;
     top: 35%;
