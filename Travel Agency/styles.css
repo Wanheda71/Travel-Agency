@@ -99,15 +99,17 @@ header nav ul li a
 }
 
 /* MAIN IMAGE */
+.container-home{
+    background-image: url("videos/thailandlow.mp4");
+}
 video { 
-    position: fixed;
+    position: absolute;
     top: 35%;
     left: 50%;
-    min-width: 200px;
-    width: auto;
+    width: 100%;
     height: auto;
     z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%, -50%);
  background: url('images/thailand.png') no-repeat;
   background-size: cover;
   transition: 1s opacity;
@@ -207,18 +209,31 @@ video {
     background-color: #fff;
     padding:  60px 0;
     /* text-align: center; */
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 
 }
 
-#destination .test
+#destination .container-destination{
+    display: flex;
+    justify-content: space-around;
+}
+
+#destination .card-destination
 {
-    margin-left: 85px;
-    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     border-radius: 10px;
     width: auto;
     padding: 0 10px;
     text-align: center;
+}
+
+#destination .card-destination img{
+    width: 400px;
+    height: auto;
 }
 
 
